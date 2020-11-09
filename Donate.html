@@ -1,0 +1,147 @@
+<head>
+
+	<title>Take Climate Action</title>
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+<center>
+    <img src="https://i.ibb.co/1mbzHgC/donate.jpg" alt="logo"  width="300" height="200"/>
+</center>
+
+
+<style>
+
+body {
+	font-family: 'Nunito';
+	background-color:#add8e6;
+	}
+
+
+header {
+	font-family: 'Crimson Text', serif;
+	font-size:80px;
+	color:#008000;
+	text-align:center;
+	margin-bottom:50px;
+	}
+
+article {
+	font-family: 'Open Sans Condensed', sans-serif;	
+}
+
+nav {
+	background-color:#8FBC8F;
+	color:#2e8b57;
+	padding:5px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight:bold;
+	text-align:right;
+	padding-right:50px;
+	margin-bottom:10px;
+}
+
+nav a:link, a:visited {
+	background-color:#2E8B57;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+article a:hover, a:active {
+	background-color:#008000;
+}
+
+article a:link, a:visited {
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a:hover, a:active {
+	background-color:#3CB371;
+}
+
+section {
+	background-color:#98FB98;
+}
+
+footer {
+	clear: both;
+	margin-bottom: 0;
+	text-align:center;
+	background-color: #8FBC8F;
+	height:30px;
+	padding-top:10px;
+	margin: 0 1.5% 24px 1.5%;
+}
+
+footer a:hover {
+	background-color:#dbcdcc;
+	margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<header>"Human Change, not Climate Change"
+	
+		</header>
+
+<nav><a href="index.html">Home</a> | <a href="About.html">About</a> | <a href="Test Your Carbon Footprint.html">Test Your Carbon Footprint</a> | <a href="Your lmpact.html">Your Impact</a> | <a href="Donate.html">Donate Today!</a> | <a href="Contact.html">Contact Us!</a> | <a href="Feedback.html">Feedback</a></nav>
+
+
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+<div style="max-width: 400px;">
+</div>
+<div style="padding-bottom: 18px;font-size : 24px;">For the Sake of the Environment!</div>
+<div style="display: flex; padding-bottom: 18px;max-width : 550px;">
+<div style=" margin-left: 0; margin-right: 1%; max-width: 49%;">First name<br/>
+<input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+</div>
+<div style=" margin-left: 1%; margin-right: 0; max-width: 49%;">Last name<br/>
+<input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+</div>
+</div><div style="padding-bottom: 18px;">Email<br/>
+<input type="text" id="data_4" name="data_4" style="max-width : 550px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/>
+<span><input type="radio" id="data_5_0" name="data_5" value="$50"/> $50</span><br/>
+<span><input type="radio" id="data_5_1" name="data_5" value="$100"/> $100</span><br/>
+<span><input type="radio" id="data_5_2" name="data_5" value="$250"/> $250</span><br/>
+<span><input type="radio" id="data_5_3" name="data_5" value="$500"/> $500</span><br/>
+</div>
+<div style="padding-bottom: 18px;">Full Address<br/>
+<textarea id="data_6" false name="data_6" style="max-width : 550px;" rows="3" class="form-control"></textarea>
+</div>
+<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+<div>
+</div>
+</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (!validateEmail(document.getElementById('data_4').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (!document.getElementById('data_5_0').checked && !document.getElementById('data_5_1').checked && !document.getElementById('data_5_2').checked && !document.getElementById('data_5_3').checked ) {
+alert('Donation Amount is required!');
+return false;}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+
+<footer>
+&copy; 2020 Maryam Ali, Jeana diNatale, Roya Suliman, Vatsla Adhikari | <a href="https://boston.techtogether.io/" target="_blank">TechTogether Boston Hackathon Challenge</a>
+<!-- &#169 can also be used in place of copy -->
+</footer>
